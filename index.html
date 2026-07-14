@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VeriDoc — Fraud Detection System</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ─── CUSTOM CURSOR ─── -->
+<div id="cursor">
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+</div>
+
+<!-- ─── NAV ─── -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <span class="logo-icon">⬡</span>
+    <span>Veri<strong>Doc</strong></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#hero" class="nav-link active">Home</a></li>
+    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+    <li><a href="#video-section" class="nav-link">Demo</a></li>
+    <li><a href="#trust-section" class="nav-link">Trust</a></li>
+    <li><a href="#contact" class="nav-link">Contact</a></li>
+    <li><a href="#about" class="nav-link">About</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="#" class="btn-ghost">Log In</a>
+    <a href="#" class="btn-primary">Get Started</a>
+  </div>
+  <button class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#hero">Home</a>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#video-section">Demo</a>
+  <a href="#trust-section">Trust</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+  <a href="#" class="mob-login">Log In</a>
+</div>
+
+<!-- ─── HERO ─── -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="grid-overlay"></div>
+
+  <div class="hero-inner">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      AI-Powered Document Intelligence
+    </div>
+
+    <h1 class="hero-title">
+      DETECT.<br>
+      <span class="outline-text">VERIFY.</span><br>
+      <span class="accent-text">PROTECT.</span>
+    </h1>
+
+    <p class="hero-desc">
+      Enterprise-grade fraud detection for insurance companies & MNCs.<br>
+      We authenticate documents in seconds — so you never pay a false claim again.
+    </p>
+
+    <div class="hero-btns">
+      <a href="#how-it-works" class="btn-primary large">See How It Works</a>
+      <a href="#video-section" class="btn-ghost large">Watch Demo ▶</a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hstat">
+        <span class="hstat-num">99.7<em>%</em></span>
+        <span class="hstat-label">Detection Accuracy</span>
+      </div>
+      <div class="hstat-divider"></div>
+      <div class="hstat">
+        <span class="hstat-num">2.4<em>s</em></span>
+        <span class="hstat-label">Avg. Verification Time</span>
+      </div>
+      <div class="hstat-divider"></div>
+      <div class="hstat">
+        <span class="hstat-num">50<em>M+</em></span>
+        <span class="hstat-label">Documents Verified</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- floating document cards -->
+  <div class="doc-card doc-card-1">
+    <div class="doc-icon">📄</div>
+    <div class="doc-info">
+      <span class="doc-name">ITR_2024.pdf</span>
+      <span class="doc-status authentic">✓ Authentic</span>
+    </div>
+  </div>
+  <div class="doc-card doc-card-2">
+    <div class="doc-icon">🪪</div>
+    <div class="doc-info">
+      <span class="doc-name">PAN_Card.jpg</span>
+      <span class="doc-status fraud">⚠ Tampered</span>
+    </div>
+  </div>
+  <div class="doc-card doc-card-3">
+    <div class="doc-icon">🏦</div>
+    <div class="doc-info">
+      <span class="doc-name">BankStmt_Q3.pdf</span>
+      <span class="doc-status authentic">✓ Authentic</span>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <div class="scroll-wheel"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ─── MARQUEE ─── -->
+<div class="marquee-bar">
+  <div class="marquee-inner">
+    <span>Document Forgery Detection</span><span class="sep">◆</span>
+    <span>ML-Powered Verification</span><span class="sep">◆</span>
+    <span>Real-Time Analysis</span><span class="sep">◆</span>
+    <span>Insurance Fraud Prevention</span><span class="sep">◆</span>
+    <span>Tamper Detection</span><span class="sep">◆</span>
+    <span>Metadata Forensics</span><span class="sep">◆</span>
+    <span>Document Forgery Detection</span><span class="sep">◆</span>
+    <span>ML-Powered Verification</span><span class="sep">◆</span>
+    <span>Real-Time Analysis</span><span class="sep">◆</span>
+    <span>Insurance Fraud Prevention</span><span class="sep">◆</span>
+    <span>Tamper Detection</span><span class="sep">◆</span>
+    <span>Metadata Forensics</span><span class="sep">◆</span>
+  </div>
+</div>
+
+<!-- ─── HOW IT WORKS ─── -->
+<section id="how-it-works">
+  <div class="section-tag">03 — Process</div>
+  <h2 class="section-title">How We <span>Verify</span><br>Your Documents</h2>
+  <p class="section-sub">A rigorous multi-layer ML pipeline that leaves no room for fraud.</p>
+
+  <div class="steps-grid">
+    <div class="step-card" data-step="01">
+      <div class="step-icon-wrap"><div class="step-icon">📤</div></div>
+      <h3>Document Submission</h3>
+      <p>Client securely uploads documents via our encrypted portal. Supports PDF, JPG, PNG — ITR forms, PAN cards, bank statements, insurance papers.</p>
+      <div class="step-tag">Encrypted Upload</div>
+    </div>
+    <div class="step-card" data-step="02">
+      <div class="step-icon-wrap"><div class="step-icon">🔍</div></div>
+      <h3>Metadata Extraction</h3>
+      <p>Our system reads hidden metadata — creation timestamps, software signatures, edit history, and pixel-level data to detect any modifications.</p>
+      <div class="step-tag">Forensic Scan</div>
+    </div>
+    <div class="step-card" data-step="03">
+      <div class="step-icon-wrap"><div class="step-icon">🤖</div></div>
+      <h3>ML Model Analysis</h3>
+      <p>Our trained model cross-references 200+ fraud patterns, font inconsistencies, seal authenticity, and layout anomalies against real document databases.</p>
+      <div class="step-tag">AI Processing</div>
+    </div>
+    <div class="step-card" data-step="04">
+      <div class="step-icon-wrap"><div class="step-icon">🧾</div></div>
+      <h3>Cross Verification</h3>
+      <p>Document data is validated against government APIs — Income Tax portal, UIDAI, and banking networks to confirm identity and financial claims.</p>
+      <div class="step-tag">API Cross-Check</div>
+    </div>
+    <div class="step-card" data-step="05">
+      <div class="step-icon-wrap"><div class="step-icon">📊</div></div>
+      <h3>Risk Scoring</h3>
+      <p>Each document receives a fraud risk score from 0–100. Documents above threshold are flagged and routed for manual human review instantly.</p>
+      <div class="step-tag">Scoring Engine</div>
+    </div>
+    <div class="step-card" data-step="06">
+      <div class="step-icon-wrap"><div class="step-icon">✅</div></div>
+      <h3>Final Report</h3>
+      <p>A detailed verification report is delivered to your dashboard — authentic, tampered, or suspicious — with full evidence trail for legal compliance.</p>
+      <div class="step-tag">Verified Report</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── VIDEO SECTION ─── -->
+<section id="video-section">
+  <div class="vid-left">
+    <div class="section-tag">02 — Demo</div>
+    <h2 class="section-title">Watch Our<br><span>System</span> In Action</h2>
+    <p class="section-sub">See how our ML pipeline processes a document from upload to verdict — in under 3 seconds.</p>
+    <ul class="vid-features">
+      <li><span class="vf-icon">⚡</span> Real-time processing</li>
+      <li><span class="vf-icon">🔒</span> End-to-end encryption</li>
+      <li><span class="vf-icon">🧠</span> 200+ fraud pattern recognition</li>
+      <li><span class="vf-icon">📋</span> Full audit trail generated</li>
+    </ul>
+  </div>
+  <div class="vid-right">
+    <div class="video-frame" id="video-wrap">
+      <video id="demo-video" preload="metadata" loop
+        poster="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"/>
+      </video>
+      <div class="vid-overlay" id="vid-overlay">
+        <div class="play-ring">
+          <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+        <span class="vid-label">Play Demo</span>
+      </div>
+      <div class="scan-line" id="scan-line"></div>
+    </div>
+    <div class="terminal" id="terminal">
+      <div class="term-header">
+        <span class="term-dot red"></span>
+        <span class="term-dot yellow"></span>
+        <span class="term-dot green"></span>
+        <span class="term-title">veridoc_engine.py</span>
+      </div>
+      <div class="term-body" id="term-body">
+        <p><span class="term-green">$</span> <span class="term-white">Initializing VeriDoc Engine...</span></p>
+        <p><span class="term-blue">[INFO]</span> <span class="term-dim">Loading ML model v4.2...</span></p>
+        <p><span class="term-blue">[INFO]</span> <span class="term-dim">Document received: ITR_2024.pdf</span></p>
+        <p><span class="term-yellow">[SCAN]</span> <span class="term-dim">Extracting metadata...</span></p>
+        <p><span class="term-yellow">[SCAN]</span> <span class="term-dim">Running pixel forensics...</span></p>
+        <p><span class="term-blue">[API]</span> <span class="term-dim">Cross-checking Income Tax portal...</span></p>
+        <p><span class="term-green">[RESULT]</span> <span class="term-white">Risk Score: 4/100</span></p>
+        <p><span class="term-green">[RESULT]</span> <span class="term-white">Status: ✓ AUTHENTIC</span></p>
+        <p class="term-cursor">█</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TRUST SECTION ─── -->
+<section id="trust-section">
+  <div class="section-tag">04 — Security</div>
+  <h2 class="section-title">Your Documents.<br><span>Fort Knox</span> Level Security.</h2>
+  <p class="section-sub">We don't just verify — we protect. Every document handled under military-grade protocols.</p>
+
+  <div class="trust-grid">
+    <div class="trust-card">
+      <div class="trust-icon">🔐</div>
+      <h3>AES-256 Encryption</h3>
+      <p>All documents encrypted in transit and at rest with military-grade AES-256 encryption. Zero plaintext exposure at any point.</p>
+    </div>
+    <div class="trust-card featured">
+      <div class="trust-badge">Most Important</div>
+      <div class="trust-icon">🚫</div>
+      <h3>Zero Data Retention</h3>
+      <p>Documents are permanently deleted after verification. We do not store, sell, or share your client's personal financial data. Ever.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">🛡️</div>
+      <h3>ISO 27001 Certified</h3>
+      <p>Our entire infrastructure is ISO 27001 certified. Audited annually by independent third-party security firms.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">⚖️</div>
+      <h3>Legal Compliance</h3>
+      <p>Fully compliant with IT Act 2000, GDPR, and IRDAI guidelines. Every verification generates a court-admissible evidence trail.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">👁️</div>
+      <h3>Full Audit Trail</h3>
+      <p>Every action logged with timestamps, IP addresses, and user IDs. Complete chain of custody for every document processed.</p>
+    </div>
+    <div class="trust-card">
+      <div class="trust-icon">🌐</div>
+      <h3>Private Cloud</h3>
+      <p>Dedicated private cloud infrastructure per enterprise client. Your data never shares resources with other organizations.</p>
+    </div>
+  </div>
+
+  <div class="trust-badges">
+    <div class="tbadge">🏛️ RBI Compliant</div>
+    <div class="tbadge">🔒 SOC 2 Type II</div>
+    <div class="tbadge">📋 IRDAI Approved</div>
+    <div class="tbadge">🌐 ISO 27001</div>
+    <div class="tbadge">⚖️ IT Act 2000</div>
+  </div>
+</section>
+
+<!-- ─── CURRENCY PARTICLE SECTION ─── -->
+<section id="currency-section">
+  <canvas id="currency-canvas"></canvas>
+  <div class="currency-text">
+    <h2>EVERY RUPEE<br><span>ACCOUNTED FOR.</span></h2>
+    <p>Hover to reveal what we protect</p>
+  </div>
+</section>
+
+<!-- ─── CONTACT ─── -->
+<section id="contact">
+  <div class="contact-inner">
+    <div class="contact-left">
+      <div class="section-tag">05 — Contact</div>
+      <h2 class="section-title">Ready to Stop<br><span>Fraud?</span></h2>
+      <p class="section-sub">Talk to our team. We'll set up a custom verification pipeline for your organization within 48 hours.</p>
+      <div class="contact-info">
+        <div class="ci-item"><span>📧</span> enterprise@veridoc.ai</div>
+        <div class="ci-item"><span>📞</span> +91 98765 43210</div>
+        <div class="ci-item"><span>🏢</span> Mumbai | Bengaluru | Delhi</div>
+      </div>
+    </div>
+    <div class="contact-right">
+      <div class="contact-form">
+        <div class="form-group">
+          <label>Company Name</label>
+          <input type="text" placeholder="e.g. HDFC Life Insurance"/>
+        </div>
+        <div class="form-group">
+          <label>Business Email</label>
+          <input type="email" placeholder="you@company.com"/>
+        </div>
+        <div class="form-group">
+          <label>Monthly Document Volume</label>
+          <select>
+            <option>Under 1,000 docs/month</option>
+            <option>1,000 – 10,000 docs/month</option>
+            <option>10,000 – 100,000 docs/month</option>
+            <option>100,000+ docs/month</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea placeholder="Tell us about your use case..."></textarea>
+        </div>
+        <button class="btn-primary large full-width" id="submit-btn">
+          Request a Demo →
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── ABOUT ─── -->
+<section id="about">
+  <div class="about-inner">
+    <div class="section-tag">06 — About</div>
+    <h2 class="section-title">Built By <span>Engineers</span><br>Who Hate Fraud.</h2>
+    <p class="section-sub">VeriDoc was founded by a team of ML researchers, forensic auditors, and fintech veterans who watched insurance companies lose billions to document fraud — and decided to fix it.</p>
+    <div class="about-grid">
+      <div class="about-stat">
+        <span class="as-num">₹ 2.4B+</span>
+        <span class="as-label">Fraud Prevented</span>
+      </div>
+      <div class="about-stat">
+        <span class="as-num">340+</span>
+        <span class="as-label">Enterprise Clients</span>
+      </div>
+      <div class="about-stat">
+        <span class="as-num">12</span>
+        <span class="as-label">Countries Active</span>
+      </div>
+      <div class="about-stat">
+        <span class="as-num">2019</span>
+        <span class="as-label">Founded</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="footer-logo"><span class="logo-icon">⬡</span> Veri<strong>Doc</strong></div>
+      <p>AI-powered document fraud detection for enterprises, MNCs, and insurance companies.</p>
+    </div>
+    <div class="footer-links">
+      <div class="fl-col">
+        <h4>Product</h4>
+        <a href="#">Features</a>
+        <a href="#">Pricing</a>
+        <a href="#">API Docs</a>
+        <a href="#">Changelog</a>
+      </div>
+      <div class="fl-col">
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Careers</a>
+        <a href="#">Blog</a>
+        <a href="#">Press</a>
+      </div>
+      <div class="fl-col">
+        <h4>Legal</h4>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">GDPR</a>
+        <a href="#">Security</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 VeriDoc Technologies Pvt. Ltd. All rights reserved.</span>
+    <span>Made with 🔍 for a fraud-free India</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
