@@ -1,0 +1,10 @@
+/*
+  Tailwind is loaded WITHOUT its "preflight" reset, so it cannot change your home page.
+  Your home CSS is put in a lower layer, so Tailwind classes (used by the claim form)
+  win over it wherever both exist. The home page itself looks exactly the same.
+*/
+@layer theme, base, home, components, utilities;
+
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/utilities.css" layer(utilities);
+@import "./styles/home.css" layer(home);
